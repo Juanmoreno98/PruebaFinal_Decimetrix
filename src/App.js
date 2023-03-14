@@ -197,6 +197,7 @@ function App() {
         mapStyle="mapbox://styles/mapbox/streets-v9"
         mapboxAccessToken={MAPBOX_TOKEN}
         onClick={(e) => click(e)}
+        onTouchEnd={(e) => click(e)}
       >
         {allPoints.length !== 0 ? (
           allPoints.map((elm, indice) => {
