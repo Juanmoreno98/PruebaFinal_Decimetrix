@@ -246,6 +246,10 @@ function App() {
     }
   }
 
+  if(allCircles.length !==0){
+    var num = allCircles.length-1
+  }
+
   return (
     <div className="map">
       <Map
@@ -697,6 +701,11 @@ function App() {
                 checked={color2 !== "RGBA( 70, 130, 180, 1 )" ? false : true}
               />
             </form>
+            <div className="information">
+              <h2>Coordenas</h2>
+              <p>{`Lng: ${allCircles[num].lng}`}</p>
+              <p>{`Lat: ${allCircles[num].lat}`}</p>
+            </div>
           </div>
         </div>
       ) : (
