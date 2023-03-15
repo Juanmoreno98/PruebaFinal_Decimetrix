@@ -199,6 +199,7 @@ function App() {
   }
 
   function deleteAllCoordinates(e) {
+    setOnModal2(false);
     dispatch(deleteCoordinates());
     dispatch(deleteCircles());
     setCoordinates({
